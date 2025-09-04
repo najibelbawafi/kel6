@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid; 
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom sama besar */
+      gap: 10px; /* jarak antar item */
+      padding: 10px;
+}
+
+
+
+    .card {
+
+      border-radius: 16px;
+
+      overflow: hidden;
+      width: 320px;
+      border: 1px solid white;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .card-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+    }
